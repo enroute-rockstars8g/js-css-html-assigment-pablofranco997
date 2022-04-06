@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(https://www.pixel4k.com/wp-content/uploads/2018/10/polygons-abstract-patterns-5k_1539371410.jpg) no-repeat;
+    background-size: cover;
+}
+
+.flex-center-all{
+    display: grid;
+}
+
+.text{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-size: 20px;
+}
+
+.titles{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container{
+    margin: 2.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.178);
+    backdrop-filter: blur(13px);
+}
+
+.result{
+    font-size: 25px;
+    color: white;
+}
+
+iframe{
+    margin: 1.5rem;
+}
+
+footer{
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(21, 21, 95);
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+img{
+    height: 7rem;
+    padding-top: 2rem;
+}

@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pagina de los rockstars</title>
+    <title>Pablo Martínez</title>
     <meta
       name="description"
       content="Este sitio es el primer demo de los Rockstars 8G"
     />
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body class="text">
     <script src="index.js"></script>
-    <div class="otherDiv">Este soy yo</div>
-    <div class="otherDiv">Hugo Santiago Gómez Salas</div>
+    <div div class="container">
+      <h1 class="titles">Este soy yo</h1>
+    <h2 class="titles">Pablo Martínez</h2>
     <!-- Cuantos años tengo, breve resumen (con personalidad), Motivaciones personales -->
-    <div class="otherDiv">Resumen bien mamalansky de los Rockstars 8G</div>
-    <!-- Recurso del DOM  -->
-    <!-- Fibonacci (1,0) (2,1) (3,1) (4,2) (5,3) (6,5)-->
-    <div class="otherDiv">
-      <input type="text" id="inputFibo" />
-      <button onclick="fibo()">Aceptar</button>
-      <div id="fiboContainer"></div>
+    <div class="titles">      
+      <iframe src="https://www.instagram.com/p/CGWDEZGBKp9/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+      <p>Tengo 24 años. Egresé de la carrea de Derecho pero de la nada decidí que quería aprender a codear. Llevo 7 meses aproximadamente en esto y aunque siento que he aprendido bastante, me falta por aprender muchas cosas más.</p>
+      <br>
+      <p>Soy aficionado a la música, sobre todo el "indie rock", aunque en realidad disfruto de todo tipo. Sé tocar guitarra electrica y el bajo, pero más que ejecutar me gusta producir (nada a nivel experto).</p>
     </div>
-    <!-- Factorial (0!,1) (1!,1) (2!,1*2=2) (3!,1*2*3=6) (4!,1*2*3*4=24) (5!,1*2*3*4*5=120)-->
-    <div class="otherDiv">
-      <input type="text" />
-      <button>Aceptar</button>
     </div>
+    <br>
+    <div class="container">
+      <div>
+        <h2 class="titles">Mis funciones</h2>
+        <br>
+        <h3>Numero de la posición en la secuencia Fibonacci</h3>
+        <I>Por ejemplo: la posición 1 (el inicio de la secuencia) te arrojará 0. La posición 6 te arrojará 5</I>
+        <br>
+        <input type="" id="inputFibo" />
+        <button onclick="fibo()">Aceptar</button>
+        <p id="fiboContainer" class="result"></p>
+      </div>
+      <br>
+      <!-- Factorial (0!,1) (1!,1) (2!,1*2=2) (3!,1*2*3=6) (4!,1*2*3*4=24) (5!,1*2*3*4*5=120)-->
+      <div class="">
+        <h2>Mis funciones</h2>
+        <br>
+        <h3>Resultado Factorial</h3>
+        <I>Por ejemplo: Ingresando 0 (0!) el resultado es 1. Ingresando 4 (4!) el resultado es 24(1*2*3*4).</I>
+        <br>
+        <input type="text" id="inputFact"/>
+        <button onclick="factorial()">Aceptar</button>
+        <p id="factContainer" class="result"></p>
+      </div>
+    </div>
+    <footer>
+      <img src="https://i.pinimg.com/originals/57/61/5b/57615b8c0092a66c1d4058b1692955cc.gif">
+    </footer>
   </body>
 </html>

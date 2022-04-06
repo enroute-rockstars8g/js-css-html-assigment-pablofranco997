@@ -1,173 +1,173 @@
-//Introducción a JS
+// //Introducción a JS
 
-//variables
+// //variables
 
-// 1.- no tipado
-// 2.- dinamico
+// // 1.- no tipado
+// // 2.- dinamico
 
-//Scope local
-let myLet = "";
-//Scope global
-var myVar = "";
-//Scope local
-const myConst = "";
+// //Scope local
+// let myLet = "";
+// //Scope global
+// var myVar = "";
+// //Scope local
+// const myConst = "";
 
-// cambio de tipo
-myLet = 25;
-myVar = 25;
+// // cambio de tipo
+// myLet = 25;
+// myVar = 25;
 
-// Error por reasignación a una constante
-try {
-  console.log("Asignacion ");
-  myConst = 25;
-} catch (e) {
-  console.log("Error ");
-} finally {
-  console.log("Siempre se ejecutara");
-}
+// // Error por reasignación a una constante
+// try {
+//   console.log("Asignacion ");
+//   myConst = 25;
+// } catch (e) {
+//   console.log("Error ");
+// } finally {
+//   console.log("Siempre se ejecutara");
+// }
 
-//Funciones
-function myFunction() {}
+// //Funciones
+// function myFunction() {}
 
-const myArrowFunction = () => {};
+// const myArrowFunction = () => {};
 
-const suma = (a, b) => {
-  return a + b;
-};
+// const suma = (a, b) => {
+//   return a + b;
+// };
 
-const resta = (a, b) => {
-  return a - b;
-};
+// const resta = (a, b) => {
+//   return a - b;
+// };
 
-const division = (a, b) => {
-  return a / b;
-};
+// const division = (a, b) => {
+//   return a / b;
+// };
 
-const multiplicacion = (a, b) => {
-  return a * b;
-};
+// const multiplicacion = (a, b) => {
+//   return a * b;
+// };
 
-const calculator = (a, b, operacion) => {
-  let result = undefined;
-  switch (operacion) {
-    case "suma":
-      result = suma(a, b);
-      break;
-    case "resta":
-      result = resta(a, b);
-      break;
-    case "division":
-      result = division(a, b);
-      break;
-    case "multiplicacion":
-      result = multiplicacion(a, b);
-      break;
-  }
+// const calculator = (a, b, operacion) => {
+//   let result = undefined;
+//   switch (operacion) {
+//     case "suma":
+//       result = suma(a, b);
+//       break;
+//     case "resta":
+//       result = resta(a, b);
+//       break;
+//     case "division":
+//       result = division(a, b);
+//       break;
+//     case "multiplicacion":
+//       result = multiplicacion(a, b);
+//       break;
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-function Dog(name = "", age = "") {
-  this.name = name;
-  this.age = age;
+// function Dog(name = "", age = "") {
+//   this.name = name;
+//   this.age = age;
 
-  this.bark = () => {
-    console.log(`${this.name} said: wouh`);
-  };
-}
+//   this.bark = () => {
+//     console.log(`${this.name} said: wouh`);
+//   };
+// }
 
-const myDog = new Dog("Firulais");
+// const myDog = new Dog("Firulais");
 
-myDog.eat = () => {
-  console.log("eating");
-};
+// myDog.eat = () => {
+//   console.log("eating");
+// };
 
-myDog.owner = { name: "Hugo" };
+// myDog.owner = { name: "Hugo" };
 
-console.log(myDog.eat());
-console.log(myDog.owner);
+// console.log(myDog.eat());
+// console.log(myDog.owner);
 
-const num = 12313213213321231;
-const numFloat = 1.35416541651651651;
-const charVar = "a";
-const charAnotherSyntax = "\n";
-const stringVar = "Hola esto es una cadena\n";
-const date = new Date();
-const boolVar = true;
-const anotherBoolVar = false;
+// const num = 12313213213321231;
+// const numFloat = 1.35416541651651651;
+// const charVar = "a";
+// const charAnotherSyntax = "\n";
+// const stringVar = "Hola esto es una cadena\n";
+// const date = new Date();
+// const boolVar = true;
+// const anotherBoolVar = false;
 
-console.log(date.getFullYear());
+// console.log(date.getFullYear());
 
-const arr = [
-  num,
-  numFloat,
-  charVar,
-  charAnotherSyntax,
-  stringVar,
-  date,
-  boolVar,
-  anotherBoolVar,
-];
+// const arr = [
+//   num,
+//   numFloat,
+//   charVar,
+//   charAnotherSyntax,
+//   stringVar,
+//   date,
+//   boolVar,
+//   anotherBoolVar,
+// ];
 
-console.log(arr[0], arr[1]);
-console.log(arr);
+// console.log(arr[0], arr[1]);
+// console.log(arr);
 
-console.log(arr.shift());
-console.log(arr);
+// console.log(arr.shift());
+// console.log(arr);
 
-arr.forEach((element) => {
-  console.log(element);
-});
+// arr.forEach((element) => {
+//   console.log(element);
+// });
 
-const modifyArray = arr.map((element) => {
-  return [element];
-});
+// const modifyArray = arr.map((element) => {
+//   return [element];
+// });
 
-console.log(modifyArray);
+// console.log(modifyArray);
 
-const myObject = {
-  marca: "Ford",
-  modelo: "Mustang",
-  fechaCreacion: 2022,
-  position: 0,
-  velocidad: 0,
-  move: () => {
-    myObject.position += myObject.velocidad;
-  },
-  colores: ["rojo", "azul", "plata"],
-  partes: {
-    motor: {
-      cilindros: 8,
-    },
-    puertas: 4,
-  },
-};
+// const myObject = {
+//   marca: "Ford",
+//   modelo: "Mustang",
+//   fechaCreacion: 2022,
+//   position: 0,
+//   velocidad: 0,
+//   move: () => {
+//     myObject.position += myObject.velocidad;
+//   },
+//   colores: ["rojo", "azul", "plata"],
+//   partes: {
+//     motor: {
+//       cilindros: 8,
+//     },
+//     puertas: 4,
+//   },
+// };
 
-console.log(myObject);
-console.log(myObject.position);
-myObject.velocidad = 50;
-myObject.move();
-myObject.move();
-console.log(myObject.position);
+// console.log(myObject);
+// console.log(myObject.position);
+// myObject.velocidad = 50;
+// myObject.move();
+// myObject.move();
+// console.log(myObject.position);
 
-console.log("Cilindros", myObject.partes.motor.cilindros);
+// console.log("Cilindros", myObject.partes.motor.cilindros);
 
-const myMap = new Map();
+// const myMap = new Map();
 
-myMap.set("primeraKey", 1);
-myMap.set("segundaKey", "jajaja");
+// myMap.set("primeraKey", 1);
+// myMap.set("segundaKey", "jajaja");
 
-console.log(myMap.get("segundaKey"));
+// console.log(myMap.get("segundaKey"));
 
-console.log(myMap.has("segundaKey"));
+// console.log(myMap.has("segundaKey"));
 
-function sayHello() {
-  console.log("Hello from button");
-}
+// function sayHello() {
+//   console.log("Hello from button");
+// }
 
-function welcome() {
-  console.log("Welcome to the button");
-}
+// function welcome() {
+//   console.log("Welcome to the button");
+// }
 
 // for (let i = 0; i < 100; i++) {
 //   const myParagraph = document.createElement("p");
@@ -180,15 +180,33 @@ function welcome() {
 function fibo() {
   const fiboNumber = parseInt(document.getElementById("inputFibo").value);
 
-  console.log(fiboNumber);
+  const numberToShow = [0,1];
+
+	for(i=2; i <= fiboNumber; i++){
+		numberToShow.push(numberToShow[i-1] + numberToShow[i-2]);	
+	}
+
+  let result = numberToShow[(numberToShow.length)-2];
+
+  const container = document.getElementById("fiboContainer");
+  container.innerText = (`El numero resultante en la posición ${fiboNumber} es: ${result}`);
+}
+
+function factorial() {
+  const factNumber = parseInt(document.getElementById("inputFact").value);
+
+  let value = factNumber
+
+  factNumber <= 0 ? value = 1 : value = factNumber
 
   const numberToShow = [];
 
-  for (let i = 0; i < fiboNumber; i++) {
-    numberToShow.push(i);
-  }
-  const container = document.getElementById("fiboContainer");
-  const praragraph = document.createElement("p");
-  praragraph.innerText = numberToShow.join(",");
-  container.appendChild(praragraph);
+	for(i=1; i <= value; i++){
+		numberToShow.push(i);	
+	}
+
+  let result = numberToShow.reduce((p,c) => p*c);
+
+  const container = document.getElementById("factContainer");
+  container.innerText = (`${factNumber}! resulta en: ${result}`);
 }
